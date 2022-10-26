@@ -1,0 +1,40 @@
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="over">
+        <mat-list>
+            <mat-list-item style="display: flex;justify-content: center;">
+                <button mat-button class="primary-button">Iniciar Sesion</button>
+
+            </mat-list-item>
+
+            <mat-list-item style="display: flex;justify-content: center;">
+                <button mat-button>Registrese</button>
+            </mat-list-item>
+        </mat-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class="bg-transparent" >
+           
+            <mat-toolbar-row>
+        
+                <img src="/assets/images/Logo.png" height="25px" alt="image" />
+                <ng-container *ngIf="!hideHamburguer">
+                    <button mat-button>Features</button>
+                    <button mat-button>Pricing</button>
+                    <button mat-button>Careers</button>
+                    <button mat-button>Help</button>
+                </ng-container>
+                <div class="spacer"></div>
+                <ng-container *ngIf="!hideHamburguer">
+                    <button mat-button  class="primary-button">Iniciar Sesion</button>
+                    <button mat-button>Registrese</button>
+                </ng-container>
+                
+                <button mat-button (click)="opened=!opened" *ngIf="hideHamburguer">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
