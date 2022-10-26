@@ -13,13 +13,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {LayoutModule} from '@angular/cdk/layout';
 import { HeadSectionComponent } from './components/head-section/head-section.component';
+import { FeaturesSectionComponent } from './components/features-section/features-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     NavBarComponent,
-    HeadSectionComponent
+    HeadSectionComponent,
+    FeaturesSectionComponent
   ],
   imports: [
     BrowserModule,
