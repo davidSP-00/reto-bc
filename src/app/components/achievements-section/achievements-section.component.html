@@ -7,50 +7,18 @@
             </div>
             <div class="col-md-6">
                 <div class="row align-items-center">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" *ngFor="let archievement of listArchievements">
                        <div class="row my-3">
                         <div class="col-3">
-                            <img src="/assets/images/FuatureIcon.png" height="25px" alt="image" />
+                            <img src={{archievement.imgUrl}} height="25px" alt="image" />
                         </div>
                         <div class="col-9">
-                                <div class="number">10000+</div>
-                                <div class="number-desc">Downloads per day</div>
+                                <div class="number">{{archievement.title}}</div>
+                                <div class="number-desc">{{archievement.text}}</div>
                         </div>
                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="row my-3">
-                         <div class="col-3">
-                             <img src="/assets/images/FuatureIcon.png" height="25px" alt="image" />
-                         </div>
-                         <div class="col-9">
-                                 <div class="number">10000+</div>
-                                 <div class="number-desc">Downloads per day</div>
-                         </div>
-                        </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <div class="row my-3">
-                         <div class="col-3">
-                             <img src="/assets/images/FuatureIcon.png" height="25px" alt="image" />
-                         </div>
-                         <div class="col-9">
-                                 <div class="number">10000+</div>
-                                 <div class="number-desc">Downloads per day</div>
-                         </div>
-                        </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <div class="row my-3">
-                         <div class="col-3">
-                             <img src="/assets/images/FuatureIcon.png" height="25px" alt="image" />
-                         </div>
-                         <div class="col-9">
-                                 <div class="number">10000+</div>
-                                 <div class="number-desc">Downloads per day</div>
-                         </div>
-                        </div>
-                     </div>
+                   
                      
                 </div>
             </div>
