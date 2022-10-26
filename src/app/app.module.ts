@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {LayoutModule} from '@angular/cdk/layout';
 import { HeadSectionComponent } from './components/head-section/head-section.component';
 import { FeaturesSectionComponent } from './components/features-section/features-section.component';
+import { AchievementsSectionComponent } from './components/achievements-section/achievements-section.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeaturesSectionComponent } from './components/features-section/features
     LandingPageComponent,
     NavBarComponent,
     HeadSectionComponent,
-    FeaturesSectionComponent
+    FeaturesSectionComponent,
+    AchievementsSectionComponent,
   ],
   imports: [
     BrowserModule,
