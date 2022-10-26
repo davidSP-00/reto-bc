@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    font-size: 12px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .middle-footer {
+        display: none;
+    }
+}
+
+.d-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.d-flex a {
+    margin: 5px;
+}
+
+.reserved {
+    font-size: 10px;
+}
+
+.app-description {
+    color: #D1D5DB;
+    margin-bottom: 5px;
+}

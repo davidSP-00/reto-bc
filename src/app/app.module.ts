@@ -15,6 +15,7 @@ import {LayoutModule} from '@angular/cdk/layout';
 import { HeadSectionComponent } from './components/head-section/head-section.component';
 import { FeaturesSectionComponent } from './components/features-section/features-section.component';
 import { AchievementsSectionComponent } from './components/achievements-section/achievements-section.component';
+import { FooterSectionComponent } from './components/footer-section/footer-section.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AchievementsSectionComponent } from './components/achievements-section/
     HeadSectionComponent,
     FeaturesSectionComponent,
     AchievementsSectionComponent,
+    FooterSectionComponent
   ],
   imports: [
     BrowserModule,
