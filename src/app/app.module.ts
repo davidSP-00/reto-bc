@@ -21,6 +21,10 @@ import {MatInputModule} from '@angular/material/input';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { GridComponent } from './views/grid/grid.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
+import { DialogComponent } from './components/dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     AchievementsSectionComponent,
     FooterSectionComponent,
     InputComponent,
-    LoginComponent
+    LoginComponent,
+    GridComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +52,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     FormsModule,
     ReactiveFormsModule,
     MatCheckboxModule,
+    MatTableModule,
+    MatDialogModule,
     BrowserAnimationsModule
   ],
   providers: [],

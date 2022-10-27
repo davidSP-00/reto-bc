@@ -1,0 +1,11 @@
+<div class="row login-form justify-content-center">
+    <div class="col-12">
+        <h3>Crear Post</h3>
+        <form [formGroup]="dialogForm" (submit)="onSubmit()">
+            <app-input label="Titulo" formControlName="titulo"></app-input>
+            <app-input label="Descripción"  formControlName="descripcion"
+                (keyup.enter)="onSubmit()"></app-input>
+        </form>
+        <button mat-button class="primary-button  w-100 my-1" (click)="onSubmit()">Guardar</button>
+    </div>
+</div>
