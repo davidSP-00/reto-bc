@@ -16,7 +16,11 @@ import { HeadSectionComponent } from './components/head-section/head-section.com
 import { FeaturesSectionComponent } from './components/features-section/features-section.component';
 import { AchievementsSectionComponent } from './components/achievements-section/achievements-section.component';
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
-
+import { LoginComponent } from './auth/login/login.component';
+import {MatInputModule} from '@angular/material/input';
+import { InputComponent } from './components/input/input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,9 @@ import { FooterSectionComponent } from './components/footer-section/footer-secti
     HeadSectionComponent,
     FeaturesSectionComponent,
     AchievementsSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    InputComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,10 @@ import { FooterSectionComponent } from './components/footer-section/footer-secti
     LayoutModule,
     MatIconModule,
     MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
     BrowserAnimationsModule
   ],
   providers: [],

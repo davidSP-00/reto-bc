@@ -1,0 +1,27 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-6 login-background p-0 d-none d-sm-block d-sm-none d-md-block">
+        </div>
+        <div class="col-md-6 col-sm-12">
+
+            <div class="row login-form justify-content-center">
+                <div class="col-md-6 col-sm-10 col-10">
+                    <p>Bienvenido</p>
+                    <h1>Inicia Sesión</h1>
+                    <form [formGroup]="loginForm" (submit)="onSubmit()">
+                        <app-input label="Email" formControlName="email"></app-input>
+                        <app-input label="Contraseña" type="password" formControlName="password"
+                            (keyup.enter)="onSubmit()"></app-input>
+                        <a routerLink="#" class="forgot-password-link"></a>
+                    </form>
+                    <mat-checkbox class="example-margin">
+                        Recordar Contraseña
+                    </mat-checkbox>
+                    <button mat-button class="primary-button  w-100 mt-5 mb-1" (click)="onSubmit()">Iniciar Sesión</button>
+                    <button mat-button class="google-button  w-100 mt-1"> <img src="/assets/images/GoogleIcon.png" alt="GoogleIcon" class="pe-1"/> Ingresar con Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
