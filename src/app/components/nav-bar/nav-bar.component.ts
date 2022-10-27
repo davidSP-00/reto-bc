@@ -25,7 +25,7 @@ export class NavBarComponent implements OnInit {
       });
   }
   iniciarSesion() {
-    this.router.navigateByUrl('/landing');
+    this.router.navigateByUrl('/login');
 
   }
 }
